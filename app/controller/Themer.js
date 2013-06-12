@@ -16,6 +16,9 @@ Ext.define('Kitchensink.controller.Themer', {
         control: {
             'selectfield[itemId="themer"]': {
                 change: 'themeChange'
+            },
+            'button[itemId="downloadTheme"]': {
+                tap: 'downloadTheme'
             }
         }
         /*
@@ -48,9 +51,13 @@ Ext.define('Kitchensink.controller.Themer', {
          */
        
     },
+    downloadTheme: function(){
+        var val = Ext.ComponentQuery.query('selectfield[itemId="themer"]')[0].getValue();
+        location.href = "themes/css/"+val+".css.zip";
+        
+    },
     
     themeChange: function(field, newValue, oldValue, eOpts){
-        console.log(newValue);
         this.setActiveStyleSheet(newValue);
     },
     
@@ -66,14 +73,6 @@ Ext.define('Kitchensink.controller.Themer', {
        if(a.getAttribute("title") == title) a.disabled = false;
      }
     }
-  /* var i, a, main;
-   for(i=0; (a = document.getElementsByTagName("link")); i++) {
-     if(a.getAttribute("rel").indexOf("style") != -1
-        && a.getAttribute("title")) {
-       a.disabled = true;
-       if(a.getAttribute("title") == title) a.disabled = false;
-     }
-   }*/
 }
     
     

@@ -7,9 +7,12 @@ Ext.define('Kitchensink.store.Themes', {
             model: 'Kitchensink.model.Theme',
             data: [
                 {text: 'Default',  value: 'default'},
-                {text: 'Custom', value: 'custom'},
-                {text: 'Dark',  value: 'dark'},
-                {text: 'Light', value: 'light'}
+                {text: 'Dark',  value: 'dark-theme'},
+                {text: 'Light', value: 'light-theme'},
+                {text: 'Ocean', value: 'ocean'},
+                {text: 'Fire', value: 'fire'},
+                {text: 'Earth', value: 'earth'},
+                {text: 'Grape', value: 'grape'}
                
             ]
         }

@@ -1,12 +1,12 @@
-$base-color: #000;
-$active-color: #ea4199;
+$base-color: #33b0b7;
+$active-color: #0380aa;
 
 $base-gradient: 'glossy';
-$tabs-dark: darken($base-color, 20%);
-$tabs-dark-active-color: saturate($active-color, 20%);
+$tabs-dark: darken($base-color, 10%);
+$tabs-dark-active-color: saturate($active-color, 10%);
 $tabs-bottom-active-gradient: 'recessed';
 
-@import '../../touch21/resources/themes/stylesheets/sencha-touch/default/all';
+@import 'sencha-touch/default/all';
 
 // You may remove any of the following modules that you
 // do not use in order to create a smaller css file.
@@ -25,16 +25,6 @@ $tabs-bottom-active-gradient: 'recessed';
 @include sencha-msgbox;
 @include sencha-loading-spinner;
 
-.tweet-wrapper {
-  h2 { font-weight: bold; padding-bottom: 3px; }
-  img { border-radius: 5px; float: left; }
-  .tweet {
-    font-size: 70%;
-    margin-left: 60px;
-    min-height: 50px;
-  }
-  .posted { float: right; }
-}
 
 @include pictos-iconmask('list');
 @include pictos-iconmask('time_repeat');

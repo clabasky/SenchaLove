@@ -54,6 +54,7 @@ Ext.define('Kitchensink.view.tablet.Main', {
                     {
                         xtype: 'button',
                         text: 'Download Theme',
+                        itemId: 'downloadTheme',
                         ui: 'confirm'
                     }
                 ]
